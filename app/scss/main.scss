@@ -267,25 +267,79 @@ h2 span {
 		flex-grow: 1;
 		text-transform: uppercase;
 		margin: 0;
+		font-size: 12px;
 
 		img {
 			width: 100%;
+			filter: brightness(80%);
 		}
 
 		.perfomance-name {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0.3s linear,opacity 0.3s linear;
+
 			position: absolute;
 			top: 20px;
 			left: 20px;
 		}
 
 		.perfomance-date {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0.3s linear,opacity 0.3s linear;
+
 			position: absolute;
 			bottom: 20px;
 			left: 20px;
 		}
 
+		.ellipsis {
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 0.1s linear,opacity 0.1s linear;
+
+			margin: auto;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background: #D1A954;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.lupa {
+				display: block;
+				width: 40%;
+				
+			}
+		}
+
 		&:hover {
 			cursor: pointer;
+			
+			img {
+				filter: brightness(100%);
+			}
+
+			.ellipsis {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.perfomance-name {
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			.perfomance-date {
+				visibility: hidden;
+				opacity: 0;
+			}
 		}
 	}
 }
@@ -310,4 +364,3 @@ h2 .first-image-perfomance {
 	z-index: 200;
 }
 */
-
