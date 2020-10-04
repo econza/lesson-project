@@ -1,6 +1,8 @@
 @import "libs";
+@import "fonts";
 
 body {
+	font-family: "Open Sans Condensed", sans-serif;
 	font-size: 14px;
 	color: #fff;
 }
@@ -19,9 +21,10 @@ body {
 		opacity: 0.85;
 	}
 }
-	.container {
-		width: 100%;
-		height: 100%;}
+	.first-screen-wrapper {
+		display: flex;
+		height: 100%;
+	}
  
 .main-menu {
 	display:flex;
@@ -51,12 +54,13 @@ body {
 	.tel a {
 		border-bottom: 2px solid #D1A954;
 	}
+
 .first-screen-content {
 		display: flex;
 		justify-content: center;
+		align-items: center;;
 		flex-wrap: wrap;
-		margin-top:100px;
-		}
+	}
 
 .image-wraper{ display: flex;
 justify-content: flex-start;
@@ -233,6 +237,7 @@ h2 span {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
+	padding: 40px 0;
 }
 
 .wraper-our-performances {
@@ -243,46 +248,107 @@ h2 span {
 }
 
 .third-header {
-font-family: Open Sans Condensed;
-font-style: normal;
-font-weight: 300;
-font-size: 48px;
-line-height: 65px;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-width: 100%;
-
+	font-family: Open Sans Condensed;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 65px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	width: 100%;
 }
 
-
-.image-perfomance {
+.perfomance {
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	margin-top: 100px;
+	margin-top: 80px;
+	
+
+	.image-lightbox {
+		position: relative;
+		flex-grow: 1;
+		text-transform: uppercase;
+		margin: 0;
+		font-size: 12px;
+
+		img {
+			width: 100%;
+			filter: brightness(50%);
+			transition: filter 0.3s linear;
+		}
+
+		.perfomance-name {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0.3s linear,opacity 0.3s linear;
+
+			position: absolute;
+			top: 20px;
+			left: 20px;
+		}
+
+		.perfomance-date {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0.3s linear,opacity 0.3s linear;
+
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+		}
+
+		.ellipsis {
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 0.1s linear,opacity 0.1s linear;
+
+			margin: auto;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background: #D1A954;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.lupa {
+				display: block;
+				width: 40%;
+				
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			
+			img {
+				filter: brightness(100%);
+			}
+
+			.ellipsis {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.perfomance-name {
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			.perfomance-date {
+				visibility: hidden;
+				opacity: 0;
+			}
+		}
+	}
 }
 
-.image-perfomance img {
 
-	width: 350px;
-	height: 450px;
-}
-
-
-.wraper-first-image-perfomance{ 
-	position: relative; }
-	  
-	h2 .oscar2020-text {
-		position: absolute;
-		left: 0;
-		bottom: 10;
-		width: 100%;
-	  }
-
-
-
-/*
+/*s
 .first-image-perfomance { 
 	background-image: url(../img/image1perfomance.png);
 	position: relative;
@@ -301,21 +367,3 @@ h2 .first-image-perfomance {
 	z-index: 200;
 }
 */
-
-
-
-	.second-image-perfomance {
-	position: relative;
-	z-index: 100;
-	}
-
-
-.wraper-second-image-perfomance {
-	position: relative;
-}
-.wraper-third-image-perfomance {
-	position: relative;
-}
-.wraper-fourth-image-perfomance {
-	position: relative;
-}
