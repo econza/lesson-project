@@ -1,6 +1,8 @@
 @import "libs";
+@import "fonts";
 
 body {
+	font-family: "Open Sans Condensed", sans-serif;
 	font-size: 14px;
 	color: #fff;
 }
@@ -271,7 +273,8 @@ h2 span {
 
 		img {
 			width: 100%;
-			filter: brightness(80%);
+			filter: brightness(50%);
+			transition: filter 0.3s linear;
 		}
 
 		.perfomance-name {
