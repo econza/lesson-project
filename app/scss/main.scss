@@ -348,22 +348,122 @@ h2 span {
 }
 
 
-/*s
-.first-image-perfomance { 
-	background-image: url(../img/image1perfomance.png);
-	position: relative;
-	z-index: 100;
-	width: 350px;
-	height: 450px;
+.wrapper-rates {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;}
+
+	.rate-content { 
+		position: relative;
+
+
+	}
+	
+	.rate-content .image {
+		width: 1110px;
+		height: 550px;
+		filter: brightness(50%);
+	}
+
+.years{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	left: 190px;
+	top: 126px;
+	font-family: Open Sans Condensed;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 98px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #D1A954;
 }
 
-h2 .first-image-perfomance  {
-	position: absolute;
-	z-index: 200;
+
+.rates-year { 
+	margin: 0;
 }
 
-h2 .first-image-perfomance {
-	position: absolute;
-	z-index: 200;
+.star {
+position: absolute;
+top: 171px;
+left: 475px;
 }
+
+.star-img { 
+	margin-right: 25px;
+}
+
+/*
+.star {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color:  #D1A954;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid  #D1A954;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+} 
+	&:before {
+	border-bottom: 80px solid  #D1A954;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: -45px;
+	left: -65px;
+	display: block;
+	content: '';
+	-webkit-transform: rotate(-35deg);
+	-moz-transform:    rotate(-35deg);
+	-ms-transform:     rotate(-35deg);
+	-o-transform:      rotate(-35deg);
+	
+	}
+	&:after {
+	position: absolute;
+	display: block;
+	color:  #D1A954;
+	top: 3px;
+	left: -105px;
+	width: 0px;
+	height: 0px;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid  #D1A954;
+	border-left: 100px solid transparent;
+	-webkit-transform: rotate(-70deg);
+	-moz-transform:    rotate(-70deg);
+	-ms-transform:     rotate(-70deg);
+	-o-transform:      rotate(-70deg);
+	content: '';
+	}
+
 */
+
+	.rate-content p {
+		position: absolute;
+		top: 180px;
+
+		right: 95x;
+		left: 475px;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 50px;
+		letter-spacing: 0.1em;
+		
+		color: #ffffff
+		
+	}
+
+	
