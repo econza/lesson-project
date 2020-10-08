@@ -8,12 +8,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    // .main-menu {
-    //     flex-wrap: wrap;
-    //     .menu-item:last-child {
-    //         margin-top: 25px;
-    //     }
-    //  }
+    .main-menu {
+        flex-wrap: wrap;
+        .menu-item:last-child {
+            margin-top: 25px;
+        }
+     }
     .first-screen-wrapper { 
         justify-content: flex-start;
     }
