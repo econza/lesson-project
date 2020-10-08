@@ -4,7 +4,9 @@
   "description": "OptimizedHTML - Start HTML Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "author": "WebDesign Master",
   "license": "ISC",
@@ -26,6 +28,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
+    "bootstrap-grid": "^3.0.1",
     "gulp-scss": "^1.4.0"
   }
 }
