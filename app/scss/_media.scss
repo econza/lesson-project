@@ -2,7 +2,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    /**/
+    .wr {
+        width:"auto"
+    }
 }
 
 
@@ -25,6 +27,14 @@
 	.out-numbers {
         margin-top: 20px;
     }
+
+
+    .wr {
+        width:"auto"
+    }
+    .wrapper-rates p { 
+        font-size: 30px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -45,6 +55,8 @@
             }
         }
     }
+
+
 }
 
 /* Extra Small Devices, Phones */
